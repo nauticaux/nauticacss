@@ -1,0 +1,24 @@
+/* naui:cursor */
+.pointer {
+  cursor: pointer;
+}
+/* naui:utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.border{
+  border: 1px solid var(--border-color, lightgray);
+}
+.radius {
+  border-radius: var(--border-radius, 5px);
+}
+.blueprint {
+  border: 1px solid blue;
+}
+/* naui:shadows */
+.shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+.shadow-none {
+  box-shadow: none;
+}

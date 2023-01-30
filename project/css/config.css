@@ -1,0 +1,59 @@
+:root{
+    /* -- Layout Variables -- */
+    --border-color: #e5e6e7;
+    --border-radius: 4px;
+    --container-padding: 5vw;
+
+    /* -- Colors --*/
+    --primary: #284E9C;
+    --secondary: #3D93D0;
+    --tertiary: #46B4ED;
+    --accent:#50BE8E;
+    --default: #484949;
+    --gray: #8E8E8E;
+    --light: #8E8E8E;
+    --label: var(--default);
+    --highlight: lightslategray;
+    --error: #E60018;
+
+    --bg-gray: #F3F5F7;
+    --bg-light: #E8F4FF;
+
+    /* -- Typography --*/
+    --font-family: itc-avant-garde-gothic-pro, sans-serif;
+    --h1-font-size: 32px;
+    --h1-color: var(--primary);
+    --h1-font-weight: 700;
+
+    --h2-font-size: 20px;
+    --h2-color: var(--primary);
+    --h2-font-weight: 700;
+
+    --h3-color: var(--primary);
+    --h3-font-size: 20px;
+    --h3-font-weight: 700;
+
+    --h4-color: var(--default);
+    --h4-font-size: 18px;
+    --h4-font-weight: 500;
+
+    --h5-color: var(--default);
+    --h5-font-size:16px;
+    --h5-font-weight:700;
+
+    --h6-color: var(--secondary);
+    --h6-font-size:15px;
+    --h6-font-weight:700;
+
+    --p-color: var(--default);
+    --p-font-size: 16px;
+    --p-font-weight: 400;
+
+    --large-font-size: 18px;
+    --small-font-size: 14px;
+    --small-font-weight: 500;
+
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+}

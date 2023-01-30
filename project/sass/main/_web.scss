@@ -1,0 +1,28 @@
+/* Basic Layout */
+section {
+  width: 100%;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+.container-pl {
+  padding-left: 1rem;
+}
+.container-pr {
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--container-padding, 4vw);
+    padding-right: var(--container-padding, 4vw);
+    width: 100%;
+  }
+  .container-pl {
+    padding-left: var(--container-padding, 4vw);
+  }
+  .container-pr {
+    padding-right: var(--container-padding, 4vw);
+  }
+}
