@@ -2,13 +2,22 @@ import sass
 import rcssmin
 
 compile_array = [
-    {"project/sass/main/pinta.layout.scss": "dist/pinta.layout.css"},
+    {"project/sass/main/base.scss": "dist/pinta.core.css"},
+    {"project/sass/main/medium.scss": "dist/pinta.responsive-768.css"},
+    {"project/sass/main/large.scss": "dist/pinta.responsive-1024.css"},
+    {"project/sass/main/extra-large.scss": "dist/pinta.responsive-1280.css"},
+    {"project/sass/main/responsive.scss": "dist/pinta.responsive.css"},
 ]
+
 minify_array = [
-    {"dist/pinta.layout.css": "dist/pinta.layout.min.css"},
-    {"project/css/global.css": "dist/pinta.global.min.css"},
-    {"project/css/elements.css": "dist/pinta.elements.min.css"},
-    {"project/responsive/mobilefirst.css": "dist/pinta.mobilefirst.min.css"}
+    {"dist/pinta.core.css": "dist/pinta.core.min.css"},
+    {"dist/pinta.responsive-768.css": "dist/pinta.responsive-768.min.css"},
+    {"dist/pinta.responsive-1024.css": "dist/pinta.responsive-1024.min.css"},
+    {"dist/pinta.responsive-1280.css": "dist/pinta.responsive-1280.min.css"},
+    {"dist/pinta.responsive.css": "dist/pinta.responsive.min.css"},
+    # {"project/css/global.css": "dist/pinta.global.min.css"},
+    # {"project/css/elements.css": "dist/pinta.elements.min.css"},
+    # {"project/responsive/mobilefirst.css": "dist/pinta.mobilefirst.min.css"}
 ]
 
 

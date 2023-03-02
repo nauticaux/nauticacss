@@ -1,0 +1,131 @@
+@mixin width($view) {
+  .#{$view}max-w-100\% {
+    max-width: 100%;
+  }
+  .#{$view}max-w-viewport {
+    max-width: 100vw;
+  }
+  .#{$view}max-w-none {
+    max-width: none;
+  }
+  .#{$view}max-w-50px {
+    max-width: 50px
+  }
+  .#{$view}max-w-100px {
+    max-width: 100px
+  }
+  .#{$view}max-w-150px {
+    max-width: 150px
+  }
+  .#{$view}max-w-200px {
+    max-width: 200px
+  }
+  .#{$view}max-w-250px {
+    max-width: 250px
+  }
+  .#{$view}max-w-300px {
+    max-width: 300px
+  }
+  .#{$view}max-w-350px {
+    max-width: 350px
+  }
+  .#{$view}max-w-400px {
+    max-width: 400px;
+  }
+  .#{$view}max-w-500px {
+    max-width: 500px;
+  }
+  .#{$view}max-w-600px {
+    max-width: 600px;
+  }
+  .#{$view}max-w-700px {
+    max-width: 700px;
+  }
+  .#{$view}max-w-800px {
+    max-width: 800px;
+  }
+  .#{$view}max-w-900px {
+    max-width: 900px;
+  }
+  .#{$view}max-w-1000px {
+    max-width: 1000px;
+  }
+  .#{$view}max-w-1100px {
+    max-width: 1100px;
+  }
+  .#{$view}max-w-1200px {
+    max-width: 1200px;
+  }
+  .#{$view}min-w-50px {
+    min-width: 50px
+  }
+  .#{$view}min-w-100px {
+    min-width: 100px
+  }
+  .#{$view}min-w-150px {
+    min-width: 150px
+  }
+  .#{$view}min-w-200px {
+    min-width: 200px
+  }
+  .#{$view}min-w-250px {
+    min-width: 250px
+  }
+  .#{$view}min-w-300px {
+    min-width: 300px
+  }
+  .#{$view}min-w-350px {
+    min-width: 350px
+  }
+  .#{$view}min-w-400px {
+    min-width: 400px
+  }
+  .#{$view}min-w-500px {
+    min-width: 500px;
+  }
+  .#{$view}min-w-600px {
+    min-width: 600px;
+  }
+  .#{$view}min-w-700px {
+    min-width: 700px;
+  }
+  .#{$view}min-w-800px {
+    min-width: 800px;
+  }
+  .#{$view}min-w-900px {
+    min-width: 900px;
+  }
+  .#{$view}min-w-1000px {
+    min-width: 1000px;
+  }
+  .#{$view}min-w-1100px {
+    min-width: 1100px;
+  }
+  .#{$view}min-w-1200px {
+    min-width: 1200px;
+  }
+  .#{$view}min-w-100 {
+    min-width: 100%;
+  }
+  .#{$view}min-w-viewport {
+    min-width: 100vw;
+  }
+  .#{$view}w-100\% {
+    width: 100%;
+  }
+  .#{$view}w-50\% {
+    width: 50%;
+  }
+  .#{$view}w-viewport {
+    width: 100vw;
+  }
+  .#{$view}w-auto {
+    width: auto;
+  }
+  .#{$view}w-max-content {
+    width: max-content;
+  }
+  .#{$view}w-min-content {
+    width: min-content;
+  }
+}

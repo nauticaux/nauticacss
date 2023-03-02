@@ -1,0 +1,14 @@
+@mixin display($view) {
+  .#{$view}block {
+    display: block;
+  }
+  .#{$view}inline {
+    display: inline;
+  }
+  .#{$view}inline-block {
+    display: inline-block;
+  }
+  .#{$view}hidden {
+    display: none;
+  }
+}

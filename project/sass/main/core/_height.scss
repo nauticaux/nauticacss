@@ -1,0 +1,66 @@
+@mixin height($view) {
+  .#{$view}max-h-100\% {
+    max-height: 100%;
+  }
+  .#{$view}max-h-viewport {
+    max-height: 100vh;
+  }
+  .#{$view}min-h-100\% {
+    min-height: 100%;
+  }
+  .#{$view}min-h-viewport {
+    min-height: 100vh;
+  }
+  .#{$view}h-100\% {
+    height: 100%;
+  }
+  .#{$view}h-50\% {
+    height: 50%;
+  }
+  .#{$view}h-viewport {
+    height: 100vh;
+  }
+  .#{$view}h-50px {
+    height: 50px;
+  }
+  .#{$view}h-100px {
+    height: 100px;
+  }
+  .#{$view}h-150px {
+    height: 150px;
+  }
+  .#{$view}h-200px {
+    height: 200px;
+  }
+  .#{$view}h-250px {
+    height: 250px;
+  }
+  .#{$view}h-300px {
+    height: 300px;
+  }
+  .#{$view}h-350px {
+    height: 350px;
+  }
+  .#{$view}h-400px {
+    height: 400px;
+  }
+  .#{$view}h-450px {
+    height: 450px;
+  }
+  .#{$view}h-500px {
+    height: 500px;
+  }
+  .#{$view}h-600px {
+    height: 600px;
+  }
+  .#{$view}h-auto {
+    height: auto;
+  }
+  .#{$view}h-max-content {
+    height: max-content;
+  }
+  .#{$view}h-min-content {
+    height: min-content;
+  }
+}
+

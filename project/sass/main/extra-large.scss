@@ -1,0 +1,5 @@
+@import "core/layout";
+
+@media (min-width: 1280px) {
+  @include pinta_view('xl\\:');
+}

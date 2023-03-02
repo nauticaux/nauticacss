@@ -1,0 +1,28 @@
+@import "maps";
+
+$paddings: ('p', 'px', 'py', 'pt', 'pb', 'pr', 'pl');
+
+@mixin paddings($views) {
+  @each $sel-1 in $paddings {
+    @each $sel-2, $size in $rem-sizes-simple {
+      .#{$views}#{$sel-1}-#{$sel-2} {
+        @if $sel-1 == 'p' {
+          padding: $size;
+        }
+        @if $sel-1 == 'px' or $sel-1 == 'pl' {
+          padding-left: $size;
+        }
+        @if $sel-1 == 'px' or $sel-1 == 'pr' {
+          padding-right: $size;
+        }
+        @if $sel-1 == 'py' or $sel-1 == 'pt' {
+          padding-top: $size;
+        }
+        @if $sel-1 == 'py' or $sel-1 == 'pb' {
+          padding-bottom: $size;
+        }
+      }
+    }
+  }
+}
+

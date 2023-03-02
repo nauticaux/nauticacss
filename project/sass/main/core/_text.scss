@@ -1,0 +1,14 @@
+@mixin text_aligment($view) {
+  .#{$view}text-l {
+    text-align: left;
+  }
+  .#{$view}text-r {
+    text-align: right;
+  }
+  .#{$view}text-c {
+    text-align: center;
+  }
+  .#{$view}text-j {
+    text-align: justify;
+  }
+}

@@ -1,94 +1,79 @@
-.flex {
-    display: flex
-}
-
-.flex-l {
+@mixin flex($view) {
+  .#{$view}flex {
+    display: flex;
+    justify-content: center;
+  }
+  .#{$view}flex-l {
     display: flex;
     justify-content: flex-start
-}
-
-.flex-r {
+  }
+  .#{$view}flex-r {
     display: flex;
     justify-content: flex-end
-}
-
-.flex-b {
+  }
+  .#{$view}flex-b {
     display: flex;
     justify-content: space-between
-}
-
-.flex-a {
+  }
+  .#{$view}flex-a {
     display: flex;
     justify-content: space-around
-}
-
-.flex-e {
+  }
+  .#{$view}flex-e {
     display: flex;
     justify-content: space-evenly
-}
-
-.inline-flex {
+  }
+  .#{$view}flex-inline {
     display: inline-flex
-}
-
-.flex-col {
+  }
+  .#{$view}flex-v {
     display: flex;
     flex-direction: column
-}
-
-.flex-row {
+  }
+  .#{$view}flex-h {
     display: flex;
     flex-direction: row
-}
-
-.flex-no-wrap {
+  }
+  .#{$view}flex-nowrap {
     flex-wrap: nowrap
-}
-
-.flex-wrap {
+  }
+  .#{$view}flex-wrap {
     flex-wrap: wrap
-}
-
-.box {
+  }
+  .#{$view}box {
     display: flex;
     align-items: center;
     justify-content: center
-}
-
-.box-l {
+  }
+  .#{$view}box-l {
     display: flex;
     align-items: center;
     justify-content: flex-start
-}
-
-.box-r {
+  }
+  .#{$view}box-r {
     display: flex;
     align-items: center;
     justify-content: flex-end
-}
-
-.box-a {
+  }
+  .#{$view}box-a {
     display: flex;
     align-items: center;
     justify-content: space-around
-}
-
-.box-b {
+  }
+  .#{$view}box-b {
     display: flex;
     align-items: center;
     justify-content: space-between
-}
-
-.box-e {
+  }
+  .#{$view}box-e {
     display: flex;
     align-items: center;
     justify-content: space-evenly
-}
-
-.flex-100 {
+  }
+  .#{$view}flex-100\% {
     flex: 100%
-}
-
-.flex-auto {
+  }
+  .#{$view}flex-auto {
     flex: auto
+  }
 }

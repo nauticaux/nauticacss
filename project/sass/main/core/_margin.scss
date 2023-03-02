@@ -1,0 +1,27 @@
+@import "maps";
+
+$margins: ('m', 'mx', 'my', 'mt', 'mb', 'mr', 'ml');
+
+@mixin margins($view) {
+  @each $sel-1 in $margins {
+    @each $sel-2, $size in $rem-sizes {
+      .#{$view}#{$sel-1}-#{$sel-2} {
+        @if $sel-1 == 'm' {
+          margin: $size;
+        }
+        @if $sel-1 == 'mx' or $sel-1 == 'ml' {
+          margin-left: $size;
+        }
+        @if $sel-1 == 'mx' or $sel-1 == 'mr' {
+          margin-right: $size;
+        }
+        @if $sel-1 == 'my' or $sel-1 == 'mt' {
+          margin-top: $size;
+        }
+        @if $sel-1 == 'my' or $sel-1 == 'mb' {
+          margin-bottom: $size;
+        }
+      }
+    }
+  }
+}

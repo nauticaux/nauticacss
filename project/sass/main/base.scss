@@ -1,0 +1,9 @@
+@import "core/lib/normalize";
+@import "core/web";
+@import "core/fixes";
+@import "core/layout";
+
+
+@include fixes();
+@include web();
+@include pinta_view('');

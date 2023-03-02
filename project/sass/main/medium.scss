@@ -1,0 +1,5 @@
+@import "core/layout";
+
+@media(min-width: 768px) {
+  @include pinta_view('m\\:');
+}
