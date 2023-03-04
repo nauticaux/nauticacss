@@ -2,22 +2,22 @@ import sass
 import rcssmin
 
 compile_array = [
-    {"project/sass/main/base.scss": "dist/pinta.core.css"},
-    {"project/sass/main/medium.scss": "dist/pinta.responsive-768.css"},
-    {"project/sass/main/large.scss": "dist/pinta.responsive-1024.css"},
-    {"project/sass/main/extra-large.scss": "dist/pinta.responsive-1280.css"},
-    {"project/sass/main/responsive.scss": "dist/pinta.responsive.css"},
+    {"project/core/base.scss": "static/dist/pinta.core.css"},
+    {"project/core/responsive-768.scss": "static/dist/pinta.responsive-768.css"},
+    {"project/core/responsive-1024.scss": "static/dist/pinta.responsive-1024.css"},
+    {"project/core/responsive-1280.scss": "static/dist/pinta.responsive-1280.css"},
+    {"project/theming/theming.scss": "static/dist/pinta.theming.css"},
+    {"project/components/components.scss": "static/dist/pinta.components.css"},
 ]
 
 minify_array = [
-    {"dist/pinta.core.css": "dist/pinta.core.min.css"},
-    {"dist/pinta.responsive-768.css": "dist/pinta.responsive-768.min.css"},
-    {"dist/pinta.responsive-1024.css": "dist/pinta.responsive-1024.min.css"},
-    {"dist/pinta.responsive-1280.css": "dist/pinta.responsive-1280.min.css"},
-    {"dist/pinta.responsive.css": "dist/pinta.responsive.min.css"},
-    # {"project/css/global.css": "dist/pinta.global.min.css"},
-    # {"project/css/elements.css": "dist/pinta.elements.min.css"},
-    # {"project/responsive/mobilefirst.css": "dist/pinta.mobilefirst.min.css"}
+    {"static/dist/pinta.core.css": "static/dist/pinta.core.min.css"},
+    {"static/dist/pinta.responsive-768.css": "static/dist/pinta.responsive-768.min.css"},
+    {"static/dist/pinta.responsive-1024.css": "static/dist/pinta.responsive-1024.min.css"},
+    {"static/dist/pinta.responsive-1280.css": "static/dist/pinta.responsive-1280.min.css"},
+    {"static/dist/pinta.responsive.css": "static/dist/pinta.responsive.min.css"},
+    {"static/dist/pinta.theming.css": "static/dist/pinta.theming.min.css"},
+    {"static/dist/pinta.components.css": "static/dist/pinta.components.min.css"},
 ]
 
 

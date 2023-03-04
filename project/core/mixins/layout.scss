@@ -12,6 +12,7 @@
 @import "position";
 @import "overflow";
 @import "borders";
+@import "images";
 
 @mixin pinta_view($view) {
   @include utilities($view);
@@ -28,5 +29,6 @@
   @include position($view);
   @include overflow($view);
   @include borders($view);
+  @include images($view);
 }
 
