@@ -3,7 +3,8 @@
 @import "mixins/fixes";
 @import "mixins/layout";
 
-
-@include fixes();
-@include web();
-@include pinta_view('');
+@layer core {
+  @include fixes();
+  @include web();
+  @include pinta_view('');
+}

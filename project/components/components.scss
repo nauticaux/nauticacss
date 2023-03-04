@@ -18,20 +18,20 @@ $modes: ('solid', 'outlined', 'stroked');
 }
 
 @each $size, $value in $sizes {
-  .btn.\:#{$size} {
+  .btn.--#{$size} {
     height: #{$value};
     padding: 0 calc(#{$value} / 2);
   }
 }
 @each $color in $colors {
-  .btn.\:#{$color} {
+  .btn.--#{$color} {
     color: var(--#{$color});
   }
 }
 
 /* Btn :solid */
 @each $color in $colors {
-  .btn.\:solid.\:#{$color} {
+  .btn.--solid.--#{$color} {
     background: var(--#{$color});
     color: var(--#{$color}-fore, white);
     border:1px solid var(--#{color})
@@ -40,7 +40,7 @@ $modes: ('solid', 'outlined', 'stroked');
 
 /* Btn :outline */
 @each $color in $colors {
-  .btn.\:outline.\:#{$color} {
+  .btn.--outline.--#{$color} {
     background: var(--btn-bg-#{$color}-light, transparent);
     border-color: var(--#{$color});
     color: var(--#{$color});
@@ -48,7 +48,7 @@ $modes: ('solid', 'outlined', 'stroked');
 }
 /* Btn :stroked */
 @each $color in $colors {
-  .btn.\:stroked.\:#{$color} {
+  .btn.--stroked.--#{$color} {
     border:1px solid #bdbdbd;
     background: #fafafa;
     color: var(--#{$color});

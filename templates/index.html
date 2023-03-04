@@ -13,62 +13,98 @@
     <link rel="stylesheet" href="/static/dist/pinta.theming.min.css">
     <style>
         :root {
-            --primary: #4a58a9;
-            --secondary: #5b5d72;
-            --secondary-light: rgba(0, 145, 198, 0.15);
-            --tertiary: #77536d;
-            --accent: #F56F47;
-            --default: #383838;
+            --primary: #0062a0;
+            --on-primary: white;
+            --primary-container: #d0e4ff;
+            --on-primary-container: #001d34;
+
+            --secondary: #526070;
+            --on-secondary: white;
+            --secondary-container: #d6e4f7;
+            --on-secondary-container: #0f1d2a;
+
+            --tertiary: #6a5779;
+            --on-tertiary: white;
+            --tertiary-container: #f1dbff;
+            --on-tertiary-container: #241532;
+
             --gray: #646464;
-            --light: #ccc;
-            --label: #607D8B;
-            --highlight: lightslategray;
-            --error: #E60018;
-            --btn-font-weight: 500;
-            --bg-gray: #F5F6F7;
-            --back-gray-300: #f7f8f9;
-            --bg-light: #E8F4FF;
+            --on-gray: white;
+            --gray-container: #fafafa;
+            --on-gray-container: #333;
+            --white: white;
+            --black: black;
+
             --border-radius: 4px;
-            --btn-border-radius: 3rem;
             --border-color: lightblue;
-            --field-border: #DFE1E5;
+
+            --btn-border-radius: 3rem;
+            --btn-font: 700;
+
             --font-family: "Lato", sans-serif;
-            --h1-font-size: 32px;
+            --font-family-alternate: "Nunito Sans", sans-serif;
+
+            --h1-font: bold 32px var(--font-family);
             --h1-color: var(--primary);
-            --h1-font-weight: 700;
-            --h2-font-size: 26px;
+            --h2-font: bold 26px var(--font-family);
             --h2-color: var(--primary);
-            --h2-font-weight: 700;
-            --h3-font-size: 23px;
+            --h3-font: bold 23px var(--font-family);
             --h3-color: var(--primary);
-            --h3-font-weight: 700;
+            --h4-font: bold 18px var(--font-family);
             --h4-color: var(--gray);
-            --h4-font-size: 18px;
-            --h4-font-weight: 700;
-            --h5-font-size: 16px;
-            --h5-font-weight: 700;
-            --h6-font-size: 15px;
-            --h6-font-weight: 700;
+            --h5-font: bold 16px var(--font-family);
+            --h5-color: var(--primary);
+            --h6-font: bold 15px var(--font-family-alternate);
             --h6-color: var(--secondary);
         }
+
+        article {
+            background: lightskyblue;
+        }
+
     </style>
 </head>
 <body>
-<div class="p-5">
-    <h1>This in Pinta!</h1>
+<div class="p-4 !secondary-container">
+    <h1 class="h3 !tertiary">This in Pinta CSS!</h1>
+    <p class="!tertiary">This is a test</p>
     <div>
-        <div class="inline-flex gap-1 p-1 !bg-gray">
-            <div class="btn :stroked">this is a button <span class="material-icons-outlined">mail</span></div>
-            <div class="btn :solid :secondary">this is a button <span class="material-icons-outlined">mail</span></div>
-            <div class="btn :outline :medium :primary">this is a button <span class="material-icons-outlined">mail</span></div>
-            <div class="btn :stroked :large :primary">this is a button <span class="material-icons-outlined">mail</span></div>
+        <div class="inline-flex gap-1 p-1 --gray-container">
+            <div class="btn --primary --small">
+                this is a button
+                <span class="material-icons-outlined">mail</span>
+            </div>
+            <div class="btn --solid --secondary">this is a button <span class="material-icons-outlined">mail</span></div>
+            <div class="btn --outline --large --primary">
+                <span class="btn__label">this is a button</span>
+                <span class="btn__icon material-icons-outlined">mail</span>
+            </div>
+            <div class="btn --primary">this is a button <span class="material-icons-outlined">mail</span>
+            </div>
         </div>
-        <div class="grid-12 gap-1">
+        <article class="grid-12 gap-1 m:box !tertiary-container">
             <div class="col-5 p-4 border"></div>
             <div class="col-7 p-4 border"></div>
-            <h1 class="!primary"></h1>
-        </div>
+        </article>
     </div>
+
+    <div class="btn --solid --primary --small">Regístrate</div>
+    <div class="btn --solid --primary">Conoce más</div>
+
+    <div class="btn --solid --primary">Regístrate</div>
+    <div class="btn --outline --primary">Conoce más</div>
+
+    <div class="btn --solid --primary"></div>
+    <div class="btn --solid --primary"></div>
+    <p class="!smaller"></p>
+
+    <div class="news-preview">
+        <h1 class="news-preview__title"></h1>
+    </div>
+
+
+
+
 </div>
 </body>
 </html>
