@@ -16,4 +16,7 @@
     border: none;
     outline: none;
   }
+  a {
+    color: var(--default, slategray);
+  }
 }

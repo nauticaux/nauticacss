@@ -1,0 +1,31 @@
+@mixin tables {
+  table {
+    border-collapse: collapse;
+    /* border:1px solid var(--border-color); */
+  }
+
+  table th {
+    text-align: left;
+  }
+
+  table th, table td {
+    vertical-align: middle;
+    padding: .25rem 1rem;
+    height: 3rem;
+    font-size: .9rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  table.--hover-highlight tbody tr:hover, table.--hover-highlight>tr:hover {
+    background-color: #fafafa;
+  }
+
+  .--table-fixed {
+    table-layout: fixed;
+  }
+  @for $step from 1 to 20 {
+    th.width-#{$step*5}\% {
+      width: $step*5%
+    }
+  }
+}

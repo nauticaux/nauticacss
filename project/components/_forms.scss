@@ -1,0 +1,25 @@
+@mixin forms() {
+  input[type='text'], input[type='email'], input[type='number'], input[type='date'], input[type='password'], input[type='search'] {
+    height: 3rem;
+    border: 1px solid #dcdedf;
+    border-radius: var(--border-radius, 2px);
+    outline: none;
+    font: 400 1rem var(--font-family);
+    box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.02);
+    padding-left: .75rem;
+    vertical-align: middle;
+  }
+
+  select {
+    height: 3rem;
+    border-radius: var(--border-radius, 2px);
+    font: 400 1rem var(--font-family);
+    outline: none;
+    border: 1px solid #dcdedf;
+    box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.02);
+    padding-left: .5rem;
+    vertical-align: middle;
+  }
+}
+
+

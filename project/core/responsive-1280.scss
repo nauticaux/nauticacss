@@ -2,4 +2,10 @@
 
 @media (min-width: 1280px) {
   @include pinta_view('xl\\:');
+  .xl\:container {
+    max-width: var(--container-max-width, 95vw);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

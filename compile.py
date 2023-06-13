@@ -2,24 +2,22 @@ import sass
 import rcssmin
 
 compile_array = [
-    {"project/core/base.scss": "static/dist/pinta.core.css"},
-    {"project/core/responsive-768.scss": "static/dist/pinta.responsive-768.css"},
-    {"project/core/responsive-1024.scss": "static/dist/pinta.responsive-1024.css"},
-    {"project/core/responsive-1280.scss": "static/dist/pinta.responsive-1280.css"},
-    {"project/theming/theming.scss": "static/dist/pinta.theming.css"},
-    {"project/components/components.scss": "static/dist/pinta.components.css"},
+    {"project/core/base.scss": "dist/nautica.core.css"},
+    {"project/core/responsive-768.scss": "dist/nautica.responsive-768.css"},
+    {"project/core/responsive-1024.scss": "dist/nautica.responsive-1024.css"},
+    {"project/core/responsive-1280.scss": "dist/nautica.responsive-1280.css"},
+    {"project/theming/theming.scss": "dist/nautica.theming.css"},
+    {"project/components/components.scss": "dist/nautica.components.css"},
 ]
 
 minify_array = [
-    {"static/dist/pinta.core.css": "static/dist/pinta.core.min.css"},
-    {"static/dist/pinta.responsive-768.css": "static/dist/pinta.responsive-768.min.css"},
-    {"static/dist/pinta.responsive-1024.css": "static/dist/pinta.responsive-1024.min.css"},
-    {"static/dist/pinta.responsive-1280.css": "static/dist/pinta.responsive-1280.min.css"},
-    {"static/dist/pinta.responsive.css": "static/dist/pinta.responsive.min.css"},
-    {"static/dist/pinta.theming.css": "static/dist/pinta.theming.min.css"},
-    {"static/dist/pinta.components.css": "static/dist/pinta.components.min.css"},
+    {"dist/nautica.core.css": "dist/min/nautica.core.min.css"},
+    {"dist/nautica.responsive-768.css": "dist/min/nautica.responsive-768.min.css"},
+    {"dist/nautica.responsive-1024.css": "dist/min/nautica.responsive-1024.min.css"},
+    {"dist/nautica.responsive-1280.css": "dist/min/nautica.responsive-1280.min.css"},
+    {"dist/nautica.theming.css": "dist/min/nautica.theming.min.css"},
+    {"dist/nautica.components.css": "dist/min/nautica.components.min.css"},
 ]
-
 
 def compile_sass(sass_array):
     for file in sass_array:

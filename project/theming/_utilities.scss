@@ -1,0 +1,47 @@
+@mixin utilities() {
+  .\!larger {
+    font-size: 1.1em;
+  }
+  .\!smaller {
+    font-size: 0.9em;
+  }
+  .\!light {
+    font-weight: var(--font-weight-light, 300)
+  }
+  .\!regular {
+    font-weight: var(--font-weight-regular, 400)
+  }
+  .\!medium {
+    font-weight: var(--font-weight-medium, 500);
+  }
+  .\!semibold {
+    font-weight: var(--font-weight-semibold, 600);
+  }
+  .\!bold {
+    font-weight: var(--font-weight--bold, 700)
+  }
+  .\!uppercase {
+    text-transform: uppercase;
+  }
+  .\!lowercase {
+    text-transform: lowercase;
+  }
+  .\!capitalize {
+    text-transform: lowercase;
+  }
+  .\!underline {
+    text-decoration: underline;
+  }
+  .\!overline {
+    text-decoration: overline;
+  }
+  .\!overline {
+    text-decoration: line-through;
+  }
+  .\!italic {
+    font-style: italic;
+  }
+  .\!small-caps {
+    font-variant: small-caps;
+  }
+}
