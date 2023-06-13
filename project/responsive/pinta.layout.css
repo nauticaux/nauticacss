@@ -1,0 +1,1427 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* fixes */
+*, a, a:hover {
+  text-decoration: none;
+  box-sizing: border-box; }
+
+dt, dd, dl, h1, h2, h3, h4, h5, h6, p, figure, pre {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+  border: none;
+  outline: none; }
+
+/* Basic Layout */
+section {
+  width: 100%; }
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%; }
+
+.container-pl {
+  padding-left: 1rem; }
+
+.container-pr {
+  padding-right: 1rem; }
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--container-padding, 4vw);
+    padding-right: var(--container-padding, 4vw);
+    width: 100%; }
+  .container-pl {
+    padding-left: var(--container-padding, 4vw); }
+  .container-pr {
+    padding-right: var(--container-padding, 4vw); } }
+
+/* naui:cursor */
+.pointer {
+  cursor: pointer; }
+
+/* naui:utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; }
+
+.border {
+  border: 1px solid var(--border-color, lightgray); }
+
+.radius {
+  border-radius: var(--border-radius, 5px); }
+
+.blueprint {
+  border: 1px solid blue; }
+
+/* naui:shadows */
+.shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); }
+
+.shadow-none {
+  box-shadow: none; }
+
+/* naui:display */
+.inline {
+  display: inline; }
+
+.inline-block {
+  display: inline-block; }
+
+.block {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.flex {
+  display: flex; }
+
+.flex-l {
+  display: flex;
+  justify-content: flex-start; }
+
+.flex-r {
+  display: flex;
+  justify-content: flex-end; }
+
+.flex-b {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-a {
+  display: flex;
+  justify-content: space-around; }
+
+.flex-e {
+  display: flex;
+  justify-content: space-evenly; }
+
+.inline-flex {
+  display: inline-flex; }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-no-wrap {
+  flex-wrap: nowrap; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.box-l {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.box-r {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.box-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.box-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.box-e {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.flex-100 {
+  flex: 100%; }
+
+.flex-auto {
+  flex: auto; }
+
+/* naui:alignment */
+.self-start {
+  align-self: flex-start; }
+
+.self-end {
+  align-self: flex-end; }
+
+.self-center {
+  align-self: center; }
+
+.self-auto {
+  align-self: auto; }
+
+.self-stretch {
+  align-self: stretch; }
+
+.items-center {
+  align-items: center; }
+
+.items-start {
+  align-items: flex-start; }
+
+.items-end {
+  align-items: flex-end; }
+
+.items-stretch {
+  align-items: stretch; }
+
+.items-baseline {
+  align-items: baseline; }
+
+/* naui:grid */
+.grid {
+  display: grid; }
+
+.inline-grid {
+  display: inline-grid; }
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); }
+
+.grid-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); }
+
+.grid-9 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); }
+
+.grid-10 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+
+.grid-11 {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); }
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.grid-5-7 {
+  display: grid;
+  grid-template-columns: 5fr 7fr; }
+
+.grid-7-5 {
+  display: grid;
+  grid-template-columns: 7fr 5fr; }
+
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.grid-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.grid-1-3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr; }
+
+.grid-3-1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+
+.grid-1-auto {
+  display: grid;
+  grid-template-columns: 1fr auto; }
+
+.grid-auto-1 {
+  display: grid;
+  grid-template-columns: auto 1fr; }
+
+/* Columns */
+.col-auto {
+  grid-column: auto; }
+
+.col-1 {
+  grid-column: span 1 / span 1; }
+
+.col-2 {
+  grid-column: span 2 / span 2; }
+
+.col-3 {
+  grid-column: span 3 / span 3; }
+
+.col-4 {
+  grid-column: span 4 / span 4; }
+
+.col-5 {
+  grid-column: span 5 / span 5; }
+
+.col-6 {
+  grid-column: span 6 / span 6; }
+
+.col-7 {
+  grid-column: span 7 / span 7; }
+
+.col-8 {
+  grid-column: span 8 / span 8; }
+
+.col-9 {
+  grid-column: span 9 / span 9; }
+
+.col-10 {
+  grid-column: span 10 / span 10; }
+
+.col-11 {
+  grid-column: span 11 / span 11; }
+
+.col-12 {
+  grid-column: span 12 / span 12; }
+
+/* naui:gaps */
+.gap-0 {
+  grid-gap: 0; }
+
+.gap-i {
+  grid-gap: .25rem; }
+
+.gap-ii {
+  grid-gap: .5rem; }
+
+.gap-iii {
+  grid-gap: .75rem; }
+
+.gap-1 {
+  grid-gap: 1rem; }
+
+.gap-15 {
+  grid-gap: 1.5rem; }
+
+.gap-2 {
+  grid-gap: 2rem; }
+
+.gap-25 {
+  grid-gap: 2.5rem; }
+
+.gap-3 {
+  grid-gap: 3rem; }
+
+.gap-x-0 {
+  column-gap: 0; }
+
+.gap-y-0 {
+  row-gap: 0; }
+
+/* naui:text */
+.text-l {
+  text-align: left; }
+
+.text-r {
+  text-align: right; }
+
+.text-c {
+  text-align: center; }
+
+.text-j {
+  text-align: justify; }
+
+/* naui:padding */
+.p-0 {
+  padding: 0; }
+
+.p-i {
+  padding: .25rem; }
+
+.p-ii {
+  padding: .5rem; }
+
+.p-iii {
+  padding: .75rem; }
+
+.p-1, .pad {
+  padding: 1rem; }
+
+.p-15 {
+  padding: 1.5rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-25 {
+  padding: 2.5rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.py-i {
+  padding-top: .25rem;
+  padding-bottom: .25rem; }
+
+.py-ii {
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
+
+.py-iii {
+  padding-top: .75rem;
+  padding-bottom: .75rem; }
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.py-15 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.py-25 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0; }
+
+.px-i {
+  padding-left: .25rem;
+  padding-right: .25rem; }
+
+.px-ii {
+  padding-left: .5rem;
+  padding-right: .5rem; }
+
+.px-iii {
+  padding-left: .75rem;
+  padding-right: .75rem; }
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.px-15 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.px-25 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.pt-0 {
+  padding-top: 0; }
+
+.pt-i {
+  padding-top: .25rem; }
+
+.pt-ii {
+  padding-top: .5rem; }
+
+.pt-iii {
+  padding-top: .75rem; }
+
+.pt-1 {
+  padding-top: 1rem; }
+
+.pt-15 {
+  padding-top: 1.5rem; }
+
+.pt-2 {
+  padding-top: 2rem; }
+
+.pt-25 {
+  padding-top: 2.5rem; }
+
+.pt-3 {
+  padding-top: 3rem; }
+
+.pb-0 {
+  padding-bottom: 0; }
+
+.pb-i {
+  padding-bottom: .25rem; }
+
+.pb-ii {
+  padding-bottom: .5rem; }
+
+.pb-iii {
+  padding-bottom: .75rem; }
+
+.pb-1 {
+  padding-bottom: 1rem; }
+
+.pb-15 {
+  padding-bottom: 1.5rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
+.pb-25 {
+  padding-bottom: 2.5rem; }
+
+.pb-3 {
+  padding-bottom: 3rem; }
+
+.pr-0 {
+  padding-right: 0; }
+
+.pr-i {
+  padding-right: .25rem; }
+
+.pr-ii {
+  padding-right: .5rem; }
+
+.pr-iii {
+  padding-right: .75rem; }
+
+.pr-1 {
+  padding-right: 1rem; }
+
+.pr-15 {
+  padding-right: 1.5rem; }
+
+.pr-2 {
+  padding-right: 2rem; }
+
+.pr-25 {
+  padding-right: 2.5rem; }
+
+.pr-3 {
+  padding-right: 3rem; }
+
+.pl-0 {
+  padding-left: 0; }
+
+.pl-i {
+  padding-left: .25rem; }
+
+.pl-ii {
+  padding-left: .5rem; }
+
+.pl-iii {
+  padding-left: .75rem; }
+
+.pl-1 {
+  padding-left: 1rem; }
+
+.pl-15 {
+  padding-left: 1.5rem; }
+
+.pl-2 {
+  padding-left: 2rem; }
+
+.pl-25 {
+  padding-left: 2.5rem; }
+
+.pl-3 {
+  padding-left: 3rem; }
+
+/* naui:margin */
+.m-0 {
+  margin: 0; }
+
+.m-i {
+  margin: .25rem; }
+
+.m-ii {
+  margin: .5rem; }
+
+.m-iii {
+  margin: .75rem; }
+
+.m-1 {
+  margin: 1rem; }
+
+.m-15 {
+  margin: 1.5rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.m-25 {
+  margin: 2.5rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.my-i {
+  margin-top: .25rem;
+  margin-bottom: .25rem; }
+
+.my-ii {
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.my-iii {
+  margin-top: .75rem;
+  margin-bottom: .75rem; }
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.my-15 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.my-25 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0; }
+
+.mx-i {
+  margin-left: .25rem;
+  margin-right: .25rem; }
+
+.mx-ii {
+  margin-left: .5rem;
+  margin-right: .5rem; }
+
+.mx-iii {
+  margin-left: .75rem;
+  margin-right: .75rem; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.mx-15 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.mx-25 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.mt-0 {
+  margin-top: 0; }
+
+.mt-i {
+  margin-top: .25rem; }
+
+.mt-ii {
+  margin-top: .5rem; }
+
+.mt-iii {
+  margin-top: .75rem; }
+
+.mt-1 {
+  margin-top: 1rem; }
+
+.mt-15 {
+  margin-top: 1.5rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mt-25 {
+  margin-top: 2.5rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mb-0 {
+  margin-bottom: 0; }
+
+.mb-i {
+  margin-bottom: .25rem; }
+
+.mb-ii {
+  margin-bottom: .5rem; }
+
+.mb-iii {
+  margin-bottom: .75rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-15 {
+  margin-bottom: 1.5rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-25 {
+  margin-bottom: 2.5rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.mr-0 {
+  margin-right: 0; }
+
+.mr-i {
+  margin-right: .25rem; }
+
+.mr-ii {
+  margin-right: .5rem; }
+
+.mr-iii {
+  margin-right: .75rem; }
+
+.mr-1 {
+  margin-right: 1rem; }
+
+.mr-15 {
+  margin-right: 1.5rem; }
+
+.mr-2 {
+  margin-right: 2rem; }
+
+.mr-25 {
+  margin-right: 2.5rem; }
+
+.mr-3 {
+  margin-right: 3rem; }
+
+.ml-0 {
+  margin-left: 0; }
+
+.ml-i {
+  margin-left: .25rem; }
+
+.ml-ii {
+  margin-left: .5rem; }
+
+.ml-iii {
+  margin-left: .75rem; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.ml-15 {
+  margin-left: 1.5rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
+
+.ml-25 {
+  margin-left: 2.5rem; }
+
+.ml-3 {
+  margin-left: 3rem; }
+
+.m-auto {
+  margin: auto; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+/* naui:spacing */
+.sx-0 > * + * {
+  margin-left: 0; }
+
+.sx-i > * + * {
+  margin-left: 0.25rem; }
+
+.sx-ii > * + * {
+  margin-left: 0.5rem; }
+
+.sx-iii > * + * {
+  margin-left: 0.75rem; }
+
+.sx-1 > * + * {
+  margin-left: 1rem; }
+
+.sx-15 > * + * {
+  margin-left: 1.5rem; }
+
+.sx-2 > * + * {
+  margin-left: 2rem; }
+
+.sx-25 > * + * {
+  margin-left: 2.5rem; }
+
+.sx-3 > * + * {
+  margin-left: 3rem; }
+
+.sy-0 > * + * {
+  margin-top: 0; }
+
+.sy-i > * + * {
+  margin-top: 0.25rem; }
+
+.sy-ii > * + * {
+  margin-top: 0.5rem; }
+
+.sy-iii > * + * {
+  margin-top: 0.75rem; }
+
+.sy-1 > * + * {
+  margin-top: 1rem; }
+
+.sy-15 > * + * {
+  margin-top: 1.5rem; }
+
+.sy-2 > * + * {
+  margin-top: 2rem; }
+
+.sy-25 > * + * {
+  margin-top: 2.5rem; }
+
+.sy-3 > * + * {
+  margin-top: 3rem; }
+
+/* naui:width */
+.max-w-100 {
+  max-width: 100%; }
+
+.max-w-viewport {
+  max-width: 100vw; }
+
+.max-w-none {
+  max-width: none; }
+
+.max-w-50px {
+  max-width: 50px; }
+
+.max-w-100px {
+  max-width: 100px; }
+
+.max-w-150px {
+  max-width: 150px; }
+
+.max-w-250px {
+  max-width: 250px; }
+
+.max-w-300px {
+  max-width: 300px; }
+
+.max-w-350px {
+  max-width: 350px; }
+
+.max-w-400px {
+  max-width: 400px; }
+
+.max-w-500px {
+  max-width: 500px; }
+
+.max-w-600px {
+  max-width: 600px; }
+
+.max-w-700px {
+  max-width: 700px; }
+
+.max-w-800px {
+  max-width: 800px; }
+
+.max-w-900px {
+  max-width: 900px; }
+
+.max-w-1000px {
+  max-width: 1000px; }
+
+.max-w-1100px {
+  max-width: 1100px; }
+
+.max-w-1200px {
+  max-width: 1200px; }
+
+.min-w-50px {
+  min-width: 50px; }
+
+.min-w-100px {
+  min-width: 100px; }
+
+.min-w-150px {
+  min-width: 150px; }
+
+.min-w-200px {
+  min-width: 200px; }
+
+.min-w-250px {
+  min-width: 250px; }
+
+.min-w-300px {
+  min-width: 300px; }
+
+.min-w-350px {
+  min-width: 350px; }
+
+.min-w-400px {
+  min-width: 400px; }
+
+.min-w-500px {
+  min-width: 500px; }
+
+.min-w-600px {
+  min-width: 600px; }
+
+.min-w-700px {
+  min-width: 700px; }
+
+.min-w-800px {
+  min-width: 800px; }
+
+.min-w-900px {
+  min-width: 900px; }
+
+.min-w-1000px {
+  min-width: 1000px; }
+
+.min-w-1100px {
+  min-width: 1100px; }
+
+.min-w-1200px {
+  min-width: 1200px; }
+
+.min-w-100 {
+  min-width: 100%; }
+
+.min-w-viewport {
+  min-width: 100vw; }
+
+.w-100 {
+  width: 100%; }
+
+.w-50 {
+  width: 50%; }
+
+.w-viewport {
+  width: 100vw; }
+
+.w-auto {
+  width: auto; }
+
+.w-max-content {
+  width: max-content; }
+
+.w-min-content {
+  width: min-content; }
+
+/* naui:height */
+.max-h-100 {
+  max-height: 100%; }
+
+.max-h-viewport {
+  max-height: 100vh; }
+
+.min-h-100 {
+  min-height: 100%; }
+
+.min-h-viewport {
+  min-height: 100vh; }
+
+.h-100 {
+  height: 100%; }
+
+.h-50 {
+  height: 50%; }
+
+.h-viewport {
+  height: 100vh; }
+
+.h-50px {
+  height: 50px; }
+
+.h-100px {
+  height: 100px; }
+
+.h-150px {
+  height: 150px; }
+
+.h-200px {
+  height: 200px; }
+
+.h-250px {
+  height: 250px; }
+
+.h-300px {
+  height: 300px; }
+
+.h-350px {
+  height: 350px; }
+
+.h-400px {
+  height: 400px; }
+
+.h-450px {
+  height: 450px; }
+
+.h-500px {
+  height: 500px; }
+
+.h-600px {
+  height: 600px; }
+
+.h-auto {
+  height: auto; }
+
+.h-max-content {
+  height: max-content; }
+
+.h-min-content {
+  height: min-content; }
+
+/* naui:position */
+.fixed {
+  position: fixed; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.static {
+  position: static; }
+
+.sticky {
+  position: sticky; }
+
+.edges-0 {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+.edges-auto {
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto; }
+
+.top-0 {
+  top: 0; }
+
+.bottom-0 {
+  bottom: 0; }
+
+.right-0 {
+  right: 0; }
+
+.left-0 {
+  left: 0; }
+
+/* naui:overflow */
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-x-scroll {
+  overflow-x: scroll; }
+
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
+.overflow-y-hideen {
+  overflow-y: hidden; }
+
+.overflow-visible {
+  overflow: visible; }
+
+.overflow-x-visible {
+  overflow-x: visible; }
+
+.overflow-y-visible {
+  overflow-y: visible; }
+
+.circle {
+  border-radius: 50%; }
+
+.border {
+  border: 1px solid var(--border-color, lightgray); }
+
+.border-t {
+  border-top: 1px solid var(--border-color, lightgray); }
+
+.border-b {
+  border-bottom: 1px solid var(--border-color, lightgray); }
+
+.border-r {
+  border-right: 1px solid var(--border-color, lightgray); }
+
+.border-l {
+  border-left: 1px solid var(--border-color, lightgray); }
+
+.rounded {
+  border-radius: var(--border-radius, 5px); }

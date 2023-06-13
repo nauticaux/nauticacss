@@ -1,0 +1,79 @@
+@mixin flex($view) {
+  .#{$view}flex {
+    display: flex;
+    justify-content: center;
+  }
+  .#{$view}flex-l {
+    display: flex;
+    justify-content: flex-start
+  }
+  .#{$view}flex-r {
+    display: flex;
+    justify-content: flex-end
+  }
+  .#{$view}flex-b {
+    display: flex;
+    justify-content: space-between
+  }
+  .#{$view}flex-a {
+    display: flex;
+    justify-content: space-around
+  }
+  .#{$view}flex-e {
+    display: flex;
+    justify-content: space-evenly
+  }
+  .#{$view}inline-flex {
+    display: inline-flex
+  }
+  .#{$view}flex-v {
+    display: flex;
+    flex-direction: column
+  }
+  .#{$view}flex-h {
+    display: flex;
+    flex-direction: row
+  }
+  .#{$view}flex-nowrap {
+    flex-wrap: nowrap
+  }
+  .#{$view}flex-wrap {
+    flex-wrap: wrap
+  }
+  .#{$view}box {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .#{$view}box-l {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+  }
+  .#{$view}box-r {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+  }
+  .#{$view}box-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+  }
+  .#{$view}box-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  .#{$view}box-e {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+  }
+  .#{$view}flex-100\% {
+    flex: 100%
+  }
+  .#{$view}flex-auto {
+    flex: auto
+  }
+}

@@ -1,0 +1,14 @@
+@import "maps";
+
+@mixin spacing($view) {
+  @each $sel, $size in $rem-sizes-simple {
+    .#{$view}sx-#{$sel} > * + * {
+      margin-left: $size;
+    }
+  }
+  @each $sel, $size in $rem-sizes-simple {
+    .#{$view}sy-#{$sel} > * + * {
+      margin-top: $size;
+    }
+  }
+}

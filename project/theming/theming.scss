@@ -1,0 +1,11 @@
+@import "utilities";
+@import "backgrounds";
+@import "colors";
+@import "typography";
+
+@layer theming {
+  @include typography();
+  @include colors();
+  @include backgrounds();
+  @include utilities();
+}

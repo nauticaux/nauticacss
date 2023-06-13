@@ -1,0 +1,28 @@
+$main-colors: ('primary', 'secondary', 'tertiary', 'accent', 'success', 'danger');
+$neutral-colors: ('gray':#777, 'light':#ccc, 'white':white, 'black':#000);
+$containers: ('primary', 'secondary', 'tertiary', 'accent', 'gray', 'success', 'danger');
+
+
+@mixin backgrounds() {
+  @each $color in $main-colors {
+    .bg-#{$color} {
+      background: var(--#{$color});
+      color: var(--#{$color}-on, white);
+    }
+  }
+
+  @each $color, $def in $neutral-colors {
+    .bg-#{$color} {
+      background: var(--#{$color}, $def);
+      color: if(($color == 'gray' or $color=='black'), var(--white, white), var(--default, #454545));
+    }
+  }
+
+  @each $color in $containers {
+    .bg-#{$color}-container {
+      background: var(--#{$color}-container);
+      color: var(--#{$color}-container-on, var(--#{$color}))
+    }
+  }
+
+}

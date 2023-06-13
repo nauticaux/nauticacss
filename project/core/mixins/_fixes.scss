@@ -1,0 +1,22 @@
+@mixin fixes() {
+  *, a, a:hover {
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  dt, dd, dl, h1, h2, h3, h4, h5, h6, p, figure, pre {
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+  }
+  a {
+    color: var(--default, slategray);
+  }
+}

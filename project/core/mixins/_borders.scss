@@ -1,0 +1,29 @@
+@mixin borders($view) {
+  .#{$view}border {
+    border: 1px solid var(--border-color, lightgray);
+  }
+  .#{$view}border-none {
+    border: none;
+  }
+  .#{$view}border-t {
+    border-top: 1px solid var(--border-color, lightgray);
+  }
+  .#{$view}border-b {
+    border-bottom: 1px solid var(--border-color, lightgray);
+  }
+  .#{$view}border-r {
+    border-right: 1px solid var(--border-color, lightgray);
+  }
+  .#{$view}border-l {
+    border-left: 1px solid var(--border-color, lightgray);
+  }
+  .#{$view}circle {
+    border-radius: 50%;
+  }
+  .#{$view}rounded {
+    border-radius: var(--border-radius, 5px);
+  }
+  .#{$view}squared {
+    border-radius: 0;
+  }
+}

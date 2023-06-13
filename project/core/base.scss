@@ -1,0 +1,13 @@
+@import "mixins/web";
+@import "mixins/fixes";
+@import "mixins/layout";
+
+@layer normalize{
+  @import "lib/normalize";
+}
+
+@layer core {
+  @include fixes();
+  @include web();
+  @include pinta_view('');
+}

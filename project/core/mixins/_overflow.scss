@@ -1,0 +1,30 @@
+@mixin overflow($view) {
+  .#{$view}overflow-scroll {
+    overflow: scroll;
+  }
+  .#{$view}overflow-x-scroll {
+    overflow-x: scroll;
+  }
+  .#{$view}overflow-y-scroll {
+    overflow-y: scroll;
+  }
+  .#{$view}overflow-hidden {
+    overflow: hidden;
+  }
+  .#{$view}overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .#{$view}overflow-y-hidden {
+    overflow-y: hidden;
+  }
+  .#{$view}overflow-visible {
+    overflow: visible;
+  }
+  .#{$view}overflow-x-visible {
+    overflow-x: visible;
+  }
+  .#{$view}overflow-y-visible {
+    overflow-y: visible;
+  }
+}
+

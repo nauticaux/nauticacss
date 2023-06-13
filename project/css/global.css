@@ -1,0 +1,162 @@
+.primary {
+    color: var(--primary)
+}
+
+.secondary {
+    color: var(--secondary)
+}
+
+.tertiary {
+    color: var(--tertiary)
+}
+
+.accent {
+    color: var(--accent)
+}
+
+.highlight {
+    color: var(--highlight, darkorange)
+}
+
+.default {
+    color: var(--default, #555555)
+}
+
+.gray {
+    color: var(--gray, #888)
+}
+
+.light {
+    color: var(--light, #ccc)
+}
+
+.label {
+    color: var(--label, lightslategray)
+}
+
+.black {
+    color: black
+}
+
+.white {
+    color: white
+}
+
+.error {
+    color: var(--error, red)
+}
+
+.bg-primary {
+    background-color: var(--primary);
+    color: white
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+    color: white
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary);
+    color: white
+}
+
+.bg-accent {
+    background-color: var(--tertiary);
+    color: white
+}
+
+.bg-gray {
+    background-color: var(--bg-gray, #f2f2f2)
+}
+
+.bg-light {
+    background-color: var(--bg-light, #fafafa)
+}
+
+.bg-black {
+    background-color: black;
+    color: white
+}
+
+.bg-white {
+    background-color: white
+}
+
+*, body {
+    font-family: var(--font-family, sans-serif);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+* {
+    color: var(--default)
+}
+
+h1, .h1 {
+    font-size: var(--h1-font-size, 30px);
+    color: var(--h1-color, var(--primary, black));
+    font-weight: var(--h1-font-weight, bold)
+}
+
+h2, .h2 {
+    font-size: var(--h2-font-size, 24px);
+    color: var(--h2-color, var(--primary, black));
+    font-weight: var(--h2-font-weight, bold)
+}
+
+h3, .h3 {
+    font-size: var(--h3-font-size, 20px);
+    color: var(--h3-color, var(--primary, black));
+    font-weight: var(--h3-font-weight, bold)
+}
+
+h4, .h4 {
+    font-size: var(--h4-font-size, 18px);
+    color: var(--h4-color, var(--primary, darkgray));
+    font-weight: var(--h4-font-weight, bold)
+}
+
+h5, .h5 {
+    font-size: var(--h5-font-size, 16px);
+    color: var(--h5-color, var(--primary, darkgray));
+    font-weight: var(--h5-font-weight, bold)
+}
+
+h6, .h6 {
+    font-size: var(--h6-font-size, 14px);
+    color: var(--h6-color, var(--primary, darkgray));
+    font-weight: var(--h6-font-weight, bold)
+}
+
+p, .p {
+    font-size: var(--p-font-size, 16px);
+    color: var(--default, #555);
+    line-height: 1.4
+}
+
+p.large, .p.large, .text-large {
+    font-size: var(--large-font-size, 18px)
+}
+
+.smaller {
+    font-size: .9rem
+}
+
+small, .text-small {
+    font-size: var(--small-font-size, 14px);
+    font-weight: var(--small-font-weight);
+}
+
+.regular {
+    font-weight: var(--regular, 400);
+}
+
+.medium {
+    font-weight: var(--medium, 500);
+}
+
+.bold {
+    font-weight: var(--bold, 700);
+}

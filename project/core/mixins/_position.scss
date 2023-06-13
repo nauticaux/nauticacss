@@ -1,0 +1,35 @@
+@mixin position($view) {
+  .#{$view}fixed {
+    position: fixed;
+  }
+  .#{$view}relative {
+    position: relative;
+  }
+  .#{$view}absolute {
+    position: absolute;
+  }
+  .#{$view}static {
+    position: static;
+  }
+  .#{$view}sticky {
+    position: sticky;
+  }
+  .#{$view}inset-0 {
+    inset: 0;
+  }
+  .#{$view}inset-auto {
+    inset: auto;
+  }
+  .#{$view}top-0 {
+    top: 0
+  }
+  .#{$view}bottom-0 {
+    bottom: 0
+  }
+  .#{$view}right-0 {
+    right: 0
+  }
+  .#{$view}left-0 {
+    left: 0
+  }
+}

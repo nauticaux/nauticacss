@@ -1,0 +1,15 @@
+@mixin elements() {
+  .pinta-tag {
+    color: var(--gray);
+    padding: .3rem 1rem;
+    display: inline-flex;
+    border-radius: 2rem;
+    background: var(--gray-container);
+    font-size: .85rem;
+    font-weight: 600;
+  }
+  .pinta-tag span {
+    font-size: .85rem;
+    font-weight: 600;
+  }
+}

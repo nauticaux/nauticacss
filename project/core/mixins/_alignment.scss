@@ -1,0 +1,33 @@
+@mixin aligment($view) {
+  .#{$view}self-start {
+    align-self: flex-start;
+  }
+  .#{$view}self-end {
+    align-self: flex-end;
+  }
+  .#{$view}self-center {
+    align-self: center;
+  }
+  .#{$view}self-auto {
+    align-self: auto;
+  }
+  .#{$view}self-stretch {
+    align-self: stretch;
+  }
+  .#{$view}items-center {
+    align-items: center;
+  }
+  .#{$view}items-start {
+    align-items: flex-start;
+  }
+  .#{$view}items-end {
+    align-items: flex-end;
+  }
+  .#{$view}items-stretch {
+    align-items: stretch;
+  }
+  .#{$view}items-baseline {
+    align-items: baseline;
+  }
+}
+

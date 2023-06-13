@@ -1,0 +1,15 @@
+$main-colors: ('primary', 'secondary', 'tertiary', 'accent', 'success', 'danger');
+$neutral-colors: ('gray':#777, 'default':#454545, 'light':#ccc, 'white':white, 'black': #000);
+
+@mixin colors() {
+  @each $color in $main-colors {
+    .color-#{$color} {
+      color: var(--#{$color});
+    }
+  }
+  @each $color, $def in $neutral-colors {
+    .color-#{$color} {
+      color: var(--#{$color}, $def);
+    }
+  }
+}

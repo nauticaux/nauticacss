@@ -1,0 +1,135 @@
+@layer theming {
+  body {
+    font-family: var(--font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    color: var(--default); }
+  h1, .h1 {
+    font: var(--h1-font, bold 2.5rem var(--font-family-heading));
+    color: var(--h1-color); }
+  h2, .h2 {
+    font: var(--h2-font, bold 2rem var(--font-family-heading));
+    color: var(--h2-color); }
+  h3, .h3 {
+    font: var(--h3-font, bold 1.5rem var(--font-family-heading));
+    color: var(--h3-color); }
+  h4, .h4 {
+    font: var(--h4-font, bold 1.25rem var(--font-family-heading));
+    color: var(--h4-color); }
+  h5, .h5 {
+    font: var(--h5-font, bold 1rem var(--font-family-heading));
+    color: var(--h5-color); }
+  h6, .h6 {
+    font: var(--h6-font, bold 1rem var(--font-family-heading));
+    color: var(--h6-color); }
+  p, .p {
+    font: var(--p-font, 400 1rem var(--font-family));
+    color: var(--p-color); }
+  a, .a {
+    font: var(--a-font, 400 1rem var(--font-family)); }
+  small, .small {
+    font: var(--small-font, 500 1rem var(--font-family)); }
+  .color-primary {
+    color: var(--primary); }
+  .color-secondary {
+    color: var(--secondary); }
+  .color-tertiary {
+    color: var(--tertiary); }
+  .color-accent {
+    color: var(--accent); }
+  .color-success {
+    color: var(--success); }
+  .color-danger {
+    color: var(--danger); }
+  .color-gray {
+    color: var(--gray, #777); }
+  .color-default {
+    color: var(--default, #454545); }
+  .color-light {
+    color: var(--light, #ccc); }
+  .color-white {
+    color: var(--white, white); }
+  .color-black {
+    color: var(--black, #000); }
+  .bg-primary {
+    background: var(--primary);
+    color: var(--primary-on, white); }
+  .bg-secondary {
+    background: var(--secondary);
+    color: var(--secondary-on, white); }
+  .bg-tertiary {
+    background: var(--tertiary);
+    color: var(--tertiary-on, white); }
+  .bg-accent {
+    background: var(--accent);
+    color: var(--accent-on, white); }
+  .bg-success {
+    background: var(--success);
+    color: var(--success-on, white); }
+  .bg-danger {
+    background: var(--danger);
+    color: var(--danger-on, white); }
+  .bg-gray {
+    background: var(--gray, #777);
+    color: var(--white, white); }
+  .bg-default {
+    background: var(--default, #454545);
+    color: var(--default, #454545); }
+  .bg-light {
+    background: var(--light, #ccc);
+    color: var(--default, #454545); }
+  .bg-white {
+    background: var(--white, white);
+    color: var(--default, #454545); }
+  .bg-black {
+    background: var(--black, #000);
+    color: var(--white, white); }
+  .bg-primary-container {
+    background: var(--primary-container);
+    color: var(--primary-container-on, var(--primary)); }
+  .bg-secondary-container {
+    background: var(--secondary-container);
+    color: var(--secondary-container-on, var(--secondary)); }
+  .bg-tertiary-container {
+    background: var(--tertiary-container);
+    color: var(--tertiary-container-on, var(--tertiary)); }
+  .bg-accent-container {
+    background: var(--accent-container);
+    color: var(--accent-container-on, var(--accent)); }
+  .bg-gray-container {
+    background: var(--gray-container);
+    color: var(--gray-container-on, var(--gray)); }
+  .bg-success-container {
+    background: var(--success-container);
+    color: var(--success-container-on, var(--success)); }
+  .bg-danger-container {
+    background: var(--danger-container);
+    color: var(--danger-container-on, var(--danger)); }
+  .\!larger {
+    font-size: 1.1em; }
+  .\!smaller {
+    font-size: 0.9em; }
+  .\!light {
+    font-weight: var(--font-weight-light, 300); }
+  .\!regular {
+    font-weight: var(--font-weight-regular, 400); }
+  .\!medium {
+    font-weight: var(--font-weight-medium, 500); }
+  .\!semibold {
+    font-weight: var(--font-weight-semibold, 600); }
+  .\!bold {
+    font-weight: var(--font-weight--bold, 700); }
+  .\!uppercase {
+    text-transform: uppercase; }
+  .\!lowercase {
+    text-transform: lowercase; }
+  .\!capitalize {
+    text-transform: lowercase; }
+  .\!underline {
+    text-decoration: underline; }
+  .\!overline {
+    text-decoration: overline; }
+  .\!overline {
+    text-decoration: line-through; }
+  .\!italic {
+    font-style: italic; }
+  .\!small-caps {
+    font-variant: small-caps; } }

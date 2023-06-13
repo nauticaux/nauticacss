@@ -1,0 +1,129 @@
+$sizes: ('extra-small': 2rem, 'small': 2.5rem, 'medium': 3.5rem, 'large':4rem);
+$colors: ('primary', 'secondary', 'tertiary', 'accent', 'default', 'white');
+$modes: ('solid', 'line', 'default');
+
+@mixin buttons() {
+  .btn, button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    font: var(--btn-font, 500 1rem var(--font-family));
+    border-radius: var(--btn-border-radius, 0);
+    border: 1px solid transparent;
+    vertical-align: middle;
+    box-shadow: var(--btn-box-shadow, none);
+    cursor: pointer;
+    height: 3rem;
+  }
+
+  .btn:hover, button:hover {
+    background: #f4f5f6;
+  }
+
+  .btn:active, button:active {
+    background: #f0f1f2;
+  }
+
+  .btn:has(i, span, .btn__icon), button:has(i, span, .btn__icon) {
+    gap: 1rem;
+  }
+  [class*="material"].\!trim-icon {
+    margin-right: calc(-1em / 4);
+    margin-left: calc(-1em / 4);
+  }
+  @each $size, $value in $sizes {
+    .btn.type-#{$size}, button.type-#{$size} {
+      height: #{$value};
+      padding: 0 calc(#{$value} / 2);
+      font: var(--btn-#{$size}-font, 500 1rem var(--font-family));
+    }
+  }
+  @each $color in $colors {
+    .btn.color-#{$color}, button.color-#{$color} {
+      color: var(--#{$color});
+    }
+  }
+
+  /* Btn :solid */
+  @each $color in $colors {
+    .btn.type-solid.color-#{$color}, button.type-solid.color-#{$color} {
+      background: var(--#{$color});
+      color: var(--#{$color}-on, white);
+      border: 1px solid var(--#{color})
+    }
+  }
+
+  .btn.type-line, button.type-line {
+    border-color: var(--default);
+    color: var(--default);
+  }
+  .btn.type-line:hover, button.type-line:hover {
+    background: var(--gray-container-light, #dddddd33);
+  }
+
+  /* Btn :outline */
+  @each $color in $colors {
+    .btn.type-line.--#{$color}, button.type-line.color-#{$color} {
+      border-color: var(--#{$color});
+      color: var(--#{$color});
+    }
+  }
+
+  @each $color in $colors {
+    .btn.type-line.color-#{$color}:hover, button.type-line.color-#{$color}:hover {
+      background: var(--#{$color}-container-light, transparent);
+    }
+  }
+  .btn.type-default, button.type-default {
+    border: 1px solid #ddd;
+    background: #fafafa;
+  }
+  .btn.type-default:hover, button.type-default:hover {
+    background: #f4f5f6;
+  }
+  .btn.type-default:active, button.type-default:active {
+    background: #f0f1f2;
+  }
+
+  .btn-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+  }
+  .btn-icon:hover {
+    background-color: #f7f8f9;
+  }
+
+  .btn-icon:active {
+    background: #f0f1f2;
+  }
+
+  //.btn-icon i, .btn-icon span {
+  //  font-size: 1rem;
+  //}
+
+  .btn-icon.type-small {
+    width: 30px;
+    height: 30px;
+    font-size: .9rem;
+    padding: 0;
+  }
+
+  .btn-icon.type-small .material-icons, .btn-icon.type-small .material-icons-outlined, .btn-icon.type-small .material-symbols-outlined {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  button.btn-icon {
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+}
