@@ -1,8 +1,8 @@
 @import "mixins/layout";
 
 @media (min-width: 1280px) {
-  @include pinta_view('xl\\:');
-  .xl\:container {
+  @include main_utilities('l\\:');
+  .l\:container {
     max-width: var(--container-max-width, 95vw);
     width: 100%;
     margin-left: auto;

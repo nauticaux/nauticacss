@@ -2,22 +2,23 @@ import sass
 import rcssmin
 
 compile_array = [
-    {"project/core/base.scss": "dist/nautica.core.css"},
-    {"project/core/responsive-768.scss": "dist/nautica.responsive-768.css"},
-    {"project/core/responsive-1024.scss": "dist/nautica.responsive-1024.css"},
-    {"project/core/responsive-1280.scss": "dist/nautica.responsive-1280.css"},
-    {"project/theming/theming.scss": "dist/nautica.theming.css"},
-    {"project/components/components.scss": "dist/nautica.components.css"},
+    {"project/layout/main.scss": "dist/pinta.layout.css"},
+    {"project/layout/responsive-768.scss": "dist/pinta.responsive-768.css"},
+    {"project/layout/responsive-1024.scss": "dist/pinta.responsive-1024.css"},
+    {"project/layout/responsive-1280.scss": "dist/pinta.responsive-1280.css"},
+    {"project/theming/theming.scss": "dist/pinta.theming.css"},
+    {"project/components/components.scss": "dist/pinta.components.css"},
 ]
 
 minify_array = [
-    {"dist/nautica.core.css": "dist/min/nautica.core.min.css"},
-    {"dist/nautica.responsive-768.css": "dist/min/nautica.responsive-768.min.css"},
-    {"dist/nautica.responsive-1024.css": "dist/min/nautica.responsive-1024.min.css"},
-    {"dist/nautica.responsive-1280.css": "dist/min/nautica.responsive-1280.min.css"},
-    {"dist/nautica.theming.css": "dist/min/nautica.theming.min.css"},
-    {"dist/nautica.components.css": "dist/min/nautica.components.min.css"},
+    {"dist/pinta.layout.css": "dist/min/pinta.layout.min.css"},
+    {"dist/pinta.responsive-768.css": "dist/min/pinta.responsive-768.min.css"},
+    {"dist/pinta.responsive-1024.css": "dist/min/pinta.responsive-1024.min.css"},
+    {"dist/pinta.responsive-1280.css": "dist/min/pinta.responsive-1280.min.css"},
+    {"dist/pinta.theming.css": "dist/min/pinta.theming.min.css"},
+    {"dist/pinta.components.css": "dist/min/pinta.components.min.css"},
 ]
+
 
 def compile_sass(sass_array):
     for file in sass_array:

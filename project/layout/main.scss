@@ -1,4 +1,4 @@
-@import "mixins/web";
+@import "mixins/patterns";
 @import "mixins/fixes";
 @import "mixins/layout";
 
@@ -6,8 +6,8 @@
   @import "lib/normalize";
 }
 
-@layer core {
+@layer layout {
   @include fixes();
-  @include web();
-  @include pinta_view('');
+  @include patterns();
+  @include main_utilities('');
 }

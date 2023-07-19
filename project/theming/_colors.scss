@@ -1,15 +1,25 @@
-$main-colors: ('primary', 'secondary', 'tertiary', 'accent', 'success', 'danger');
-$neutral-colors: ('gray':#777, 'default':#454545, 'light':#ccc, 'white':white, 'black': #000);
+$main-colors: ('primary', 'secondary', 'accent', 'gray');
+$neutral-colors: ('white':white, 'black': black, 'default': #454545, 'lite': #ccc);
 
 @mixin colors() {
   @each $color in $main-colors {
     .color-#{$color} {
-      color: var(--#{$color});
+      color: var(--color-#{$color});
+    }
+  }
+  @each $color in $main-colors {
+    .color-#{$color}-fore {
+      color: var(--color-#{$color}-fore, white);
+    }
+  }
+  @each $color in $main-colors {
+    .color-#{$color}-inverted {
+      color: var(--color-#{$color}-inverted, white);
     }
   }
   @each $color, $def in $neutral-colors {
     .color-#{$color} {
-      color: var(--#{$color}, $def);
+      color: var(--color-#{$color}, $def);
     }
   }
 }

@@ -1,6 +1,6 @@
-$sizes: ('extra-small': 2rem, 'small': 2.5rem, 'medium': 3.5rem, 'large':4rem);
-$colors: ('primary', 'secondary', 'tertiary', 'accent', 'default', 'white');
-$modes: ('solid', 'line', 'default');
+$sizes: ('extra-small': 2rem, 'small': 2.5rem, 'large': 3.5rem, 'extra-large':4rem);
+$colors: ('primary', 'secondary', 'accent');
+$modes: ('basic', 'line', 'solid');
 
 @mixin buttons() {
   .btn, button {
@@ -33,56 +33,80 @@ $modes: ('solid', 'line', 'default');
     margin-left: calc(-1em / 4);
   }
   @each $size, $value in $sizes {
-    .btn.type-#{$size}, button.type-#{$size} {
+    .btn.#{$size}, button.#{$size} {
       height: #{$value};
       padding: 0 calc(#{$value} / 2);
       font: var(--btn-#{$size}-font, 500 1rem var(--font-family));
     }
   }
+
+  /* Flat version = Default  */
   @each $color in $colors {
-    .btn.color-#{$color}, button.color-#{$color} {
-      color: var(--#{$color});
+    .btn.flat-#{$color}, button.flat-#{$color} {
+      color: var(--color-#{$color});
     }
   }
 
-  /* Btn :solid */
+  /* Solid version */
   @each $color in $colors {
-    .btn.type-solid.color-#{$color}, button.type-solid.color-#{$color} {
-      background: var(--#{$color});
-      color: var(--#{$color}-on, white);
-      border: 1px solid var(--#{color})
+    .btn.solid-#{$color}, button.solid-#{$color} {
+      background: var(--color-#{$color});
+      color: var(--color-#{$color}-inverted, white);
+    }
+  }
+  @each $color in $colors {
+    .btn.solid-#{$color}:hover, button.solid-#{$color}:hover {
+      background: var(--color-#{$color}-deep);
+    }
+  }
+  .btn.solid-white, button.solid-white {
+    background: var(--color-white, white);
+  }
+  .btn.solid-white:hover, button.solid-white:hover {
+    background: var(--color-gray-pale, #dddddd33);
+  }
+
+  /* Line version */
+  .btn.line, button.line {
+    border-color: var(--color-default);
+    color: var(--color-default);
+  }
+  .btn.line:hover, button.line:hover {
+    background: var(--color-gray-pale, #dddddd33);
+  }
+
+  /* Line version with colors */
+  .btn.line-white, button.line-white {
+    background: transparent;
+    border-color: var(--color-white, white);
+    color: var(--color-white, white);
+  }
+  .btn.line-white:hover, button.line-white:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--color-white, white);
+    color: var(--color-white, white);
+  }
+
+  @each $color in $colors {
+    .btn.line-#{$color}, button.line-#{$color} {
+      border-color: var(--color-#{$color});
+      color: var(--color-#{$color});
+    }
+  }
+  @each $color in $colors {
+    .btn.line-#{$color}:hover, button.line-#{$color}:hover {
+      background: var(--color-#{$color}-pale, transparent);
     }
   }
 
-  .btn.type-line, button.type-line {
-    border-color: var(--default);
-    color: var(--default);
-  }
-  .btn.type-line:hover, button.type-line:hover {
-    background: var(--gray-container-light, #dddddd33);
-  }
-
-  /* Btn :outline */
-  @each $color in $colors {
-    .btn.type-line.--#{$color}, button.type-line.color-#{$color} {
-      border-color: var(--#{$color});
-      color: var(--#{$color});
-    }
-  }
-
-  @each $color in $colors {
-    .btn.type-line.color-#{$color}:hover, button.type-line.color-#{$color}:hover {
-      background: var(--#{$color}-container-light, transparent);
-    }
-  }
-  .btn.type-default, button.type-default {
+  .btn.basic, button.basic {
     border: 1px solid #ddd;
     background: #fafafa;
   }
-  .btn.type-default:hover, button.type-default:hover {
+  .btn.basic:hover, button.basic:hover {
     background: #f4f5f6;
   }
-  .btn.type-default:active, button.type-default:active {
+  .btn.basic:active, button.basic:active {
     background: #f0f1f2;
   }
 
@@ -105,18 +129,14 @@ $modes: ('solid', 'line', 'default');
     background: #f0f1f2;
   }
 
-  //.btn-icon i, .btn-icon span {
-  //  font-size: 1rem;
-  //}
-
-  .btn-icon.type-small {
+  .btn-icon.small {
     width: 30px;
     height: 30px;
     font-size: .9rem;
     padding: 0;
   }
 
-  .btn-icon.type-small .material-icons, .btn-icon.type-small .material-icons-outlined, .btn-icon.type-small .material-symbols-outlined {
+  .btn-icon.small .material-icons, .btn-icon.small .material-icons-outlined, .btn-icon.small .material-symbols-outlined {
     font-size: 20px;
     padding: 0;
   }

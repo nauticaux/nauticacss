@@ -1,4 +1,4 @@
-@import "utilities";
+@import "usability";
 @import "display";
 @import "flex";
 @import "alignment";
@@ -14,8 +14,9 @@
 @import "borders";
 @import "images";
 
-@mixin pinta_view($view) {
-  @include utilities($view);
+/* View = responsive view */
+@mixin main_utilities($view) {
+  @include usability($view);
   @include display($view);
   @include flex($view);
   @include aligment($view);

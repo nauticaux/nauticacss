@@ -1,11 +1,14 @@
 @mixin flex($view) {
   .#{$view}flex {
     display: flex;
-    justify-content: center;
   }
   .#{$view}flex-l {
     display: flex;
-    justify-content: flex-start
+    justify-content: flex-start;
+  }
+  .#{$view}flex-c {
+    display: flex;
+    justify-content: center;
   }
   .#{$view}flex-r {
     display: flex;

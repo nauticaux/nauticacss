@@ -1,28 +1,35 @@
-$main-colors: ('primary', 'secondary', 'tertiary', 'accent', 'success', 'danger');
-$neutral-colors: ('gray':#777, 'light':#ccc, 'white':white, 'black':#000);
-$containers: ('primary', 'secondary', 'tertiary', 'accent', 'gray', 'success', 'danger');
-
+$main-colors: ('primary', 'secondary', 'accent', 'gray');
+$neutral-colors: ('white':white, 'black':black);
 
 @mixin backgrounds() {
   @each $color in $main-colors {
     .bg-#{$color} {
-      background: var(--#{$color});
-      color: var(--#{$color}-on, white);
+      background: var(--color-#{$color});
+      color: var(--color-#{$color}-inverted, white);
     }
   }
-
+  @each $color in $main-colors {
+    .bg-#{$color}-deep {
+      background: var(--color-#{$color}-deep);
+      color: var(--color-#{$color}-inverted, white);
+    }
+  }
+  @each $color in $main-colors {
+    .bg-#{$color}-soft {
+      background: var(--color-#{$color}-soft);
+      color: var(--color-#{$color}-fore);
+    }
+  }
+  @each $color in $main-colors {
+    .bg-#{$color}-pale {
+      background: var(--color-#{$color}-pale);
+      color: var(--color-#{$color}-fore);
+    }
+  }
   @each $color, $def in $neutral-colors {
     .bg-#{$color} {
-      background: var(--#{$color}, $def);
-      color: if(($color == 'gray' or $color=='black'), var(--white, white), var(--default, #454545));
+      background: var(--color-#{$color}, $def);
+      color: if($color=='black', white, var(--default));
     }
   }
-
-  @each $color in $containers {
-    .bg-#{$color}-container {
-      background: var(--#{$color}-container);
-      color: var(--#{$color}-container-on, var(--#{$color}))
-    }
-  }
-
 }

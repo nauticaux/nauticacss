@@ -1,3 +1,4 @@
+/* View = responsive view */
 @layer normalize {
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
   /* Document
@@ -271,7 +272,7 @@
   [hidden] {
     display: none; } }
 
-@layer core {
+@layer layout {
   *, a, a:hover {
     text-decoration: none;
     box-sizing: border-box; }
@@ -304,8 +305,8 @@
     cursor: pointer; }
   .no-scrollbar::-webkit-scrollbar {
     display: none; }
-  .shadow {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); }
+  .box-shadow {
+    box-shadow: var(--box-shadow, 0 3px 6px rgba(0, 0, 0, 0.12)); }
   .shadow-none {
     box-shadow: none; }
   .block {
@@ -317,11 +318,13 @@
   .hidden {
     display: none; }
   .flex {
-    display: flex;
-    justify-content: center; }
+    display: flex; }
   .flex-l {
     display: flex;
     justify-content: flex-start; }
+  .flex-c {
+    display: flex;
+    justify-content: center; }
   .flex-r {
     display: flex;
     justify-content: flex-end; }
@@ -1158,6 +1161,9 @@
     border-radius: 0; }
   .aspect-ratio-16-9 {
     aspect-ratio: 16 / 9;
+    object-fit: cover; }
+  .aspect-ratio-8-5 {
+    aspect-ratio: 8 / 5;
     object-fit: cover; }
   .aspect-ratio-1-1 {
     aspect-ratio: 1 / 1;
