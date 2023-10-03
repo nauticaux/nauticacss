@@ -1,4 +1,4 @@
-$main-colors: ('primary', 'secondary', 'accent', 'gray');
+$main-colors: ('primary', 'secondary', 'accent', 'tertiary', 'gray');
 $neutral-colors: ('white':white, 'black': black, 'default': #454545, 'lite': #ccc);
 
 @mixin colors() {

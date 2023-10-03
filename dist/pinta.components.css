@@ -1,5 +1,5 @@
 @layer components {
-  .btn, button {
+  .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -11,28 +11,28 @@
     box-shadow: var(--btn-box-shadow, none);
     cursor: pointer;
     height: 3rem; }
-  .btn:hover, button:hover {
+  .btn:hover {
     background: #f4f5f6; }
-  .btn:active, button:active {
+  .btn:active {
     background: #f0f1f2; }
-  .btn:has(i, span, .btn__icon), button:has(i, span, .btn__icon) {
+  .btn:has(i, span, .btn__icon) {
     gap: 1rem; }
   [class*="material"].\!trim-icon {
     margin-right: calc(-1em / 4);
     margin-left: calc(-1em / 4); }
-  .btn.extra-small, button.extra-small {
+  .btn.extra-small {
     height: 2rem;
     padding: 0 calc(2rem / 2);
     font: var(--btn-extra-small-font, 500 1rem var(--font-family)); }
-  .btn.small, button.small {
+  .btn.small {
     height: 2.5rem;
     padding: 0 calc(2.5rem / 2);
     font: var(--btn-small-font, 500 1rem var(--font-family)); }
-  .btn.large, button.large {
+  .btn.large {
     height: 3.5rem;
     padding: 0 calc(3.5rem / 2);
     font: var(--btn-large-font, 500 1rem var(--font-family)); }
-  .btn.extra-large, button.extra-large {
+  .btn.extra-large {
     height: 4rem;
     padding: 0 calc(4rem / 2);
     font: var(--btn-extra-large-font, 500 1rem var(--font-family)); }
@@ -44,61 +44,61 @@
   .btn.flat-accent, button.flat-accent {
     color: var(--color-accent); }
   /* Solid version */
-  .btn.solid-primary, button.solid-primary {
+  .btn.solid-primary {
     background: var(--color-primary);
     color: var(--color-primary-inverted, white); }
-  .btn.solid-secondary, button.solid-secondary {
+  .btn.solid-secondary {
     background: var(--color-secondary);
     color: var(--color-secondary-inverted, white); }
-  .btn.solid-accent, button.solid-accent {
+  .btn.solid-accent {
     background: var(--color-accent);
     color: var(--color-accent-inverted, white); }
-  .btn.solid-primary:hover, button.solid-primary:hover {
+  .btn.solid-primary:hover {
     background: var(--color-primary-deep); }
-  .btn.solid-secondary:hover, button.solid-secondary:hover {
+  .btn.solid-secondary:hover {
     background: var(--color-secondary-deep); }
-  .btn.solid-accent:hover, button.solid-accent:hover {
+  .btn.solid-accent:hover {
     background: var(--color-accent-deep); }
-  .btn.solid-white, button.solid-white {
+  .btn.solid-white {
     background: var(--color-white, white); }
-  .btn.solid-white:hover, button.solid-white:hover {
+  .btn.solid-white:hover {
     background: var(--color-gray-pale, #dddddd33); }
   /* Line version */
-  .btn.line, button.line {
+  .btn.line {
     border-color: var(--color-default);
     color: var(--color-default); }
-  .btn.line:hover, button.line:hover {
+  .btn.line:hover {
     background: var(--color-gray-pale, #dddddd33); }
   /* Line version with colors */
-  .btn.line-white, button.line-white {
+  .btn.line-white {
     background: transparent;
     border-color: var(--color-white, white);
     color: var(--color-white, white); }
-  .btn.line-white:hover, button.line-white:hover {
+  .btn.line-white:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: var(--color-white, white);
     color: var(--color-white, white); }
-  .btn.line-primary, button.line-primary {
+  .btn.line-primary {
     border-color: var(--color-primary);
     color: var(--color-primary); }
-  .btn.line-secondary, button.line-secondary {
+  .btn.line-secondary {
     border-color: var(--color-secondary);
     color: var(--color-secondary); }
-  .btn.line-accent, button.line-accent {
+  .btn.line-accent {
     border-color: var(--color-accent);
     color: var(--color-accent); }
-  .btn.line-primary:hover, button.line-primary:hover {
+  .btn.line-primary:hover {
     background: var(--color-primary-pale, transparent); }
-  .btn.line-secondary:hover, button.line-secondary:hover {
+  .btn.line-secondary:hover {
     background: var(--color-secondary-pale, transparent); }
-  .btn.line-accent:hover, button.line-accent:hover {
+  .btn.line-accent:hover {
     background: var(--color-accent-pale, transparent); }
-  .btn.basic, button.basic {
+  .btn.basic {
     border: 1px solid #ddd;
     background: #fafafa; }
-  .btn.basic:hover, button.basic:hover {
+  .btn.basic:hover {
     background: #f4f5f6; }
-  .btn.basic:active, button.basic:active {
+  .btn.basic:active {
     background: #f0f1f2; }
   .btn-icon {
     width: 35px;
@@ -122,9 +122,6 @@
   .btn-icon.small .material-icons, .btn-icon.small .material-icons-outlined, .btn-icon.small .material-symbols-outlined {
     font-size: 20px;
     padding: 0; }
-  button.btn-icon {
-    -webkit-appearance: none;
-    outline: none; }
   table {
     border-collapse: collapse;
     /* border:1px solid var(--border-color); */ }

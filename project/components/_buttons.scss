@@ -3,7 +3,7 @@ $colors: ('primary', 'secondary', 'accent');
 $modes: ('basic', 'line', 'solid');
 
 @mixin buttons() {
-  .btn, button {
+  .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -17,15 +17,15 @@ $modes: ('basic', 'line', 'solid');
     height: 3rem;
   }
 
-  .btn:hover, button:hover {
+  .btn:hover {
     background: #f4f5f6;
   }
 
-  .btn:active, button:active {
+  .btn:active {
     background: #f0f1f2;
   }
 
-  .btn:has(i, span, .btn__icon), button:has(i, span, .btn__icon) {
+  .btn:has(i, span, .btn__icon) {
     gap: 1rem;
   }
   [class*="material"].\!trim-icon {
@@ -33,7 +33,7 @@ $modes: ('basic', 'line', 'solid');
     margin-left: calc(-1em / 4);
   }
   @each $size, $value in $sizes {
-    .btn.#{$size}, button.#{$size} {
+    .btn.#{$size} {
       height: #{$value};
       padding: 0 calc(#{$value} / 2);
       font: var(--btn-#{$size}-font, 500 1rem var(--font-family));
@@ -49,64 +49,64 @@ $modes: ('basic', 'line', 'solid');
 
   /* Solid version */
   @each $color in $colors {
-    .btn.solid-#{$color}, button.solid-#{$color} {
+    .btn.solid-#{$color} {
       background: var(--color-#{$color});
       color: var(--color-#{$color}-inverted, white);
     }
   }
   @each $color in $colors {
-    .btn.solid-#{$color}:hover, button.solid-#{$color}:hover {
+    .btn.solid-#{$color}:hover {
       background: var(--color-#{$color}-deep);
     }
   }
-  .btn.solid-white, button.solid-white {
+  .btn.solid-white {
     background: var(--color-white, white);
   }
-  .btn.solid-white:hover, button.solid-white:hover {
+  .btn.solid-white:hover {
     background: var(--color-gray-pale, #dddddd33);
   }
 
   /* Line version */
-  .btn.line, button.line {
+  .btn.line {
     border-color: var(--color-default);
     color: var(--color-default);
   }
-  .btn.line:hover, button.line:hover {
+  .btn.line:hover {
     background: var(--color-gray-pale, #dddddd33);
   }
 
   /* Line version with colors */
-  .btn.line-white, button.line-white {
+  .btn.line-white {
     background: transparent;
     border-color: var(--color-white, white);
     color: var(--color-white, white);
   }
-  .btn.line-white:hover, button.line-white:hover {
+  .btn.line-white:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: var(--color-white, white);
     color: var(--color-white, white);
   }
 
   @each $color in $colors {
-    .btn.line-#{$color}, button.line-#{$color} {
+    .btn.line-#{$color} {
       border-color: var(--color-#{$color});
       color: var(--color-#{$color});
     }
   }
   @each $color in $colors {
-    .btn.line-#{$color}:hover, button.line-#{$color}:hover {
+    .btn.line-#{$color}:hover {
       background: var(--color-#{$color}-pale, transparent);
     }
   }
 
-  .btn.basic, button.basic {
+  .btn.basic {
     border: 1px solid #ddd;
     background: #fafafa;
   }
-  .btn.basic:hover, button.basic:hover {
+  .btn.basic:hover {
     background: #f4f5f6;
   }
-  .btn.basic:active, button.basic:active {
+  .btn.basic:active {
     background: #f0f1f2;
   }
 
@@ -139,11 +139,6 @@ $modes: ('basic', 'line', 'solid');
   .btn-icon.small .material-icons, .btn-icon.small .material-icons-outlined, .btn-icon.small .material-symbols-outlined {
     font-size: 20px;
     padding: 0;
-  }
-
-  button.btn-icon {
-    -webkit-appearance: none;
-    outline: none;
   }
 
 }
